@@ -8,7 +8,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
+    overflow: auto;
 }
 
 /* ゲームボード */
@@ -20,8 +21,10 @@ body {
     background-color: #4CAF50;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    max-width: 80%;
-    margin-bottom: 20px;
+    max-width: 90%;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 /* カードの基本スタイル */
@@ -37,6 +40,7 @@ body {
     justify-content: space-between;
     padding: 15px;
     transition: transform 0.3s;
+    box-sizing: border-box;
 }
 
 .card:hover {
@@ -77,6 +81,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
 .button:hover {
