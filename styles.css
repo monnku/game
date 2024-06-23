@@ -92,4 +92,5 @@ h1 {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #cccccc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
